@@ -1,0 +1,25 @@
+---
+baseurl: /
+description: ''
+domain: graham.lol
+email: go@graham.lol
+github_username: grahamotte
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  typographic_symbols:
+    hellip: ...
+    laquo: '<<'
+    laquo_space: '<< '
+    mdash: '---'
+    ndash: '--'
+    raquo: '>>'
+    raquo_space: ' >>'
+markdown: kramdown
+plugins:
+  - jekyll-feed
+sass:
+  sass_dir: _sass
+  style: compressed
+title: Graham Otte
+url: https://graham.lol/

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <title>
+      {% if page.title == "Home" %}
+        {{ site.title }} &middot; {{ site.tagline }}
+      {% else %}
+        {{ page.title }} &middot; {{ site.title }}
+      {% endif %}
+    </title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    {%- feed_meta -%}
+
+    <link rel="stylesheet" href="{{ "/public/main.css" | relative_url }}" />
+    <link rel="shortcut icon" href="{{ "/public/favicon.svg" | relative_url }}" />
+
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="/feed.xml">
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="spacer"></div>
+
+      {{site.title}}
+        <!-- - <a href="/">home</a>
+        - <a href="/about">about</a>
+        - <a href="/feed.xml">rss</a> -->
+
+      <div class="spacer"></div>
+
+      {% if page.title %}
+        <h1>
+          {{ page.date | date: "%Y-%m-%d" }}
+          {% if page.date %}
+            -
+          {% endif %}
+          {{page.title}}
+        </h1>
+      {% endif %}
+
+      {{ content }}
+    </div>
+  </body>
+</html>
