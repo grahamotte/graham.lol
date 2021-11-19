@@ -13,6 +13,10 @@ title: About
 
 ## Links
 
-- [Github](https://github.com/grahamotte)
-- [Linkedin](https://www.linkedin.com/in/graham-otte/)
+[Github](https://github.com/grahamotte)
 
+[Linkedin](https://www.linkedin.com/in/graham-otte/)
+
+## Contact
+
+go \a/t\ grahamotte.com
